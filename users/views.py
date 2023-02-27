@@ -32,3 +32,8 @@ def userLogin(request):
 def userLogout(request):
     logout(request)
     return redirect('login')
+
+
+def userRegister(request):
+
+    return render(request, 'login.html')
