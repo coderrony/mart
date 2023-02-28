@@ -16,21 +16,28 @@
 
 </head>
 
-<body >
+<body class="bg-gray-100">
     <header>
         <!-- Nav bar start -->
 
         <div class=" bg-white flex justify-center shadow-sm">
             <div class=" w-10/12 flex justify-between p-3">
                 <div class="flex space-x-4">
-                    <a href="{% url 'home' %}"><img src="{% static 'images/warriors-mart.png' %}" alt="logo" class=" w-10 "></a>
+                    <a href="{% url 'home' %}"><img src="{% static 'images/warriors-mart.png' %}" alt="logo"
+                            class=" w-10 "></a>
                     <a href="{% url 'home' %}" class="   text-sm font-normal text-gray-900 hover:text-gray-500">Home</a>
 
-                    <a href="#" class=" text-sm font-normal   text-gray-900  hover:text-gray-500">Cars</a>
+                    <a href="{% url 'car' %}" class=" text-sm font-normal   text-gray-900  hover:text-gray-500">Cars</a>
 
-                    <a href="#" class=" text-sm font-normal   text-gray-900 hover:text-gray-500">Bikes</a>
+<<<<<<< HEAD
+                    <a href="{% url 'bike' %}"
+                        class=" text-sm font-normal   text-gray-900 hover:text-gray-500">Bikes</a>
+=======
+                    <a href="{% url 'bike' %}" class=" text-sm font-normal   text-gray-900 hover:text-gray-500">Bikes</a>
+>>>>>>> 2f072be3e43051857e180b82e60cdcc1e742788e
 
-                    <a href="#" class=" text-sm font-normal   text-gray-900 hover:text-gray-500">Trucks</a>
+                    <a href="{% url 'trucks' %}"
+                        class=" text-sm font-normal   text-gray-900 hover:text-gray-500">Trucks</a>
 
                     <a href="#" class=" text-sm font-normal   text-gray-900 hover:text-gray-500">Spare
                         Parts</a>
@@ -43,9 +50,11 @@
                 <div class="flex space-x-4">
 
                     {% if request.user.is_authenticated %}
-                    <a href="{% url 'logout' %}" class=" text-sm font-normal   text-gray-900 hover:text-gray-500">Logout</a>
+                    <a href="{% url 'logout' %}"
+                        class=" text-sm font-normal   text-gray-900 hover:text-gray-500">Logout</a>
                     {% else %}
-                    <a href="{% url 'login' %}" class=" text-sm font-normal   text-gray-900 hover:text-gray-500">Sign in</a>
+                    <a href="{% url 'login' %}" class=" text-sm font-normal   text-gray-900 hover:text-gray-500">Sign
+                        in</a>
                     {% endif %}
 
                     {% comment %} <a href="#" class=" text-sm font-normal   text-gray-900 hover:text-gray-500">Create
@@ -53,14 +62,16 @@
 
                     <a href="#" class=" text-gray-400 hover:text-gray-500">
                         <span class="sr-only">Search</span>
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                         </svg>
                     </a>
 
                     <a href="#" class=" group -m-2 flex items-center">
-                        <svg class="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <svg class="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                         </svg>
@@ -74,13 +85,13 @@
         <!-- Nav bar end -->
     </header>
 
-     <main>
-   
+    <main>
+
         {% block content %}
         {% endblock content %}
-     </main>
+    </main>
 
-     <footer class="bg-gray-200 dark:bg-gray-900">
+    <footer class="bg-gray-200 dark:bg-gray-900">
         <div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">Company</h2>
