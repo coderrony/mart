@@ -23,9 +23,14 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('user/', include('users.urls')),
+<<<<<<< HEAD
     path('bike/', include('bike.urls')),
     path('car/', include('car.urls')),
     path('truck/', include('truck.urls')),
+=======
+    path('bike', include('bike.urls')),
+    path('car', include('car.urls')),
+>>>>>>> 2a01c7e670c667aa3603813f577d58e7cf1d6260
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
