@@ -8,10 +8,10 @@
     pip install virtualenv 
     python -m venv env
     env\Scripts\activate
-    cd mart
+    cd five-warriors
     pip install -r requirements.txt
     //open git bash terminal
-    cd mart
+    cd five-warriors
     npm i 
     npm run build
     //back to  powershell and run 
