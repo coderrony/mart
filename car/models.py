@@ -3,6 +3,7 @@ import uuid
 
 # Create your models here.
 
+
 class Cars(models.Model):
     mode_name = models.CharField(max_length=150)
     colors = models.CharField(max_length=200)
@@ -13,7 +14,7 @@ class Cars(models.Model):
     engine = models.CharField(max_length=200)
     qty = models.CharField(max_length=200)
     car_image = models.ImageField(
-        null=True, blank=True, upload_to="car_images/", default="bmw1.jpg")
+        null=True, blank=True, upload_to="car_images/", default="coming-soon2.jpg")
     created = models.DateTimeField(auto_now_add=True)
     id = models.UUIDField(default=uuid.uuid4, unique=True,
                           primary_key=True, editable=False)
