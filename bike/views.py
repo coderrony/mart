@@ -1,5 +1,6 @@
 from django.shortcuts import render
-
+from .models import Bikes
 # Create your views here.
 def bikePage(request):
-    return render(request, 'bike.html', {})
+    bikes = Bikes.objects.all()
+    return render(request, 'bike.html', {'bikes':bikes})
