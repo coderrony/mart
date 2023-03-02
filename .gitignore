@@ -10,10 +10,3 @@ truck/__pycache__
 users/__pycache__
 static/src/output.css
 static/CACHE
-bike/migrations/__pycache__
-car/migrations/__pycache__
-contact/migrations/__pycache__
-home/migrations/__pycache__
-spareParts/migrations/__pycache__
-truck/migrations/__pycache__
-users/migrations/__pycache__
