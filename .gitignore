@@ -10,3 +10,4 @@ truck/__pycache__
 users/__pycache__
 static/src/output.css
 static/CACHE
+db.sqlite3
