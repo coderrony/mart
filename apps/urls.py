@@ -13,6 +13,8 @@ urlpatterns = [
     path('car/', include('car.urls')),
     path('truck/', include('truck.urls')),
 
+    path('spareParts/', include('spareParts.urls')),
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
